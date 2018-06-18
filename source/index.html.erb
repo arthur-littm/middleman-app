@@ -1,15 +1,15 @@
----
-title: Le Wagon - Middleman
----
+<div class="container">
+  <% date = Date.today.strftime('%A, %b %d') %>
+  <h1>Today it's <%= date %></h1>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+  <%= link_to "Apply today", "#", class: "btn btn-primary"  %>
+
+  <p>today we are learning about</p>
+  <% technologies = ['ERB', 'Middleman', 'SCSS'] %>
+  <ul>
+    <% technologies.each do |tech| %>
+      <li><%= tech %></li>
+    <% end %>
+  </ul>
 </div>
+

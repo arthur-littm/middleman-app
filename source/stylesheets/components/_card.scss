@@ -1,0 +1,16 @@
+.card {
+  padding: 30px 10px;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  margin-top: 20px;
+  position: relative;
+}
+
+.card span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $red;
+  color: white;
+}

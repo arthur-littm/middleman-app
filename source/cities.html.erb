@@ -1,0 +1,18 @@
+<div class="container">
+
+
+  <div class="row">
+    <% data.cities.each do |city| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: url('http://kitt.lewagon.com/placeholder/cities/<%= city['name'] %>')">
+          <h3><%= city['name'].capitalize %></h3>
+          <p><%= city['address'] %></p>
+          <% if city['last_seats'] %>
+            <span>hurry!</span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
